@@ -1,0 +1,166 @@
+<!DOCTYPE html><html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lugares turísticos de San Lorenzo</title>
+  <style>
+    :root{
+      --bg:#0f172a;
+      --panel:#111827ee;
+      --text:#e5e7eb;
+      --muted:#9ca3af;
+      --accent:#22d3ee;
+      --accent-2:#a78bfa;
+      --chip:#1f2937;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:linear-gradient(180deg,var(--bg),#020617);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Inter,Arial,sans-serif}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    header{
+      position:sticky;top:0;z-index:50;background:#0b1224cc;backdrop-filter:blur(8px);
+      border-bottom:1px solid #1f2937
+    }
+    .container{max-width:1100px;margin:0 auto;padding:24px}
+    .title{font-size:clamp(26px,4vw,42px);margin:10px 0 6px}
+    .subtitle{color:var(--muted);margin:0 0 14px}
+    nav{display:flex;flex-wrap:wrap;gap:10px;padding:12px 0}
+    .chip{background:var(--chip);border:1px solid #273244;border-radius:999px;padding:8px 14px;display:inline-flex;gap:10px;align-items:center}
+    .chip:hover{border-color:#2f3d52}
+    main{padding:28px 0 60px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+    .card{background:linear-gradient(180deg,var(--panel),#0b1020);border:1px solid #1f2937;border-radius:18px;overflow:hidden;box-shadow:0 10px 30px #0006}
+    .card img{width:100%;height:160px;object-fit:cover;display:block;border-bottom:1px solid #1f2937}
+    .card .body{padding:16px}
+    h3{margin:0 0 6px;font-size:20px}
+    p{margin:8px 0 12px;line-height:1.5}
+    .meta{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+    .meta a{display:inline-flex;align-items:center;gap:8px;padding:8px 10px;border:1px solid #273244;border-radius:10px;background:#101a31}
+    .meta a:hover{background:#0f1a33}
+    footer{border-top:1px solid #1f2937;padding:26px 0;color:var(--muted)}
+    .badge{display:inline-block;padding:6px 10px;border:1px dashed #334155;border-radius:8px;color:#c7d2fe;background:#0f1a33}
+    .note{font-size:14px;color:var(--muted)}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="title">Lugares turísticos de <span style="color:var(--accent-2)">San Lorenzo</span></h1>
+      <p class="subtitle">Seis sitios para conocer en la ciudad de San Lorenzo, Departamento Central (Paraguay). Incluye reseña breve, info útil y enlace a ubicación.</p>
+      <nav aria-label="Navegación rápida">
+        <a class="chip" href="#parroquia">Parroquia San Lorenzo Mártir</a>
+        <a class="chip" href="#ferrocarril">Antigua Estación del Ferrocarril</a>
+        <a class="chip" href="#plaza">Plaza Central</a>
+        <a class="chip" href="#mercado">Mercado Municipal</a>
+        <a class="chip" href="#una">Campus de la UNA</a>
+        <a class="chip" href="#pinedo">Pinedo Shopping</a>
+      </nav>
+    </div>
+  </header>  
+
+  <main class="container">
+
+    <!-- Nueva sección introductoria -->
+    <section id="lugares">
+      <h2 style="font-size:28px; margin-top:20px; color:var(--accent-2);">
+        Lugares turísticos
+      </h2>
+      <p>A continuación se muestran algunos de los sitios más representativos de San Lorenzo.</p>
+    </section>
+
+    <!-- Sección de tarjetas -->
+    <section class="grid">
+      <!-- 1. Parroquia San Lorenzo Mártir -->
+      <article id="parroquia" class="card">
+        <img src="img/imagen1.jpg" alt="Parroquia San Lorenzo Mártir">
+        <div class="body">
+          <h3>Parroquia San Lorenzo Mártir</h3>
+          <p>Templo histórico ubicado en el centro de la ciudad, punto de encuentro en fiestas patronales y referencia arquitectónica local.</p>
+          <p class="note">Consejo: ir al atardecer para buenas fotos de la fachada.</p>
+          <div class="meta">
+            <a href="https://www.google.com/maps/search/?api=1&query=Parroquia+San+Lorenzo+M%C3%A1rtir+San+Lorenzo+Paraguay" target="_blank">📍 Ubicación</a>
+            <a href="#top">🔝 Inicio</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 2. Antigua Estación del Ferrocarril -->
+      <article id="ferrocarril" class="card">
+        <img src="img/imagen2.jpg" alt="Antigua Estación del Ferrocarril">
+        <div class="body">
+          <h3>Antigua Estación del Ferrocarril</h3>
+          <p>Parte del antiguo ramal del ferrocarril paraguayo. Ideal para quienes disfrutan de la historia y la fotografía urbana.</p>
+          <p class="note">Suele haber artesanos y vendedores en fechas especiales.</p>
+          <div class="meta">
+            <a href="https://www.google.com/maps/search/?api=1&query=Estaci%C3%B3n+Ferrocarril+San+Lorenzo+Paraguay" target="_blank">📍 Ubicación</a>
+            <a href="#top">🔝 Inicio</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 3. Plaza Central de San Lorenzo -->
+      <article id="plaza" class="card">
+        <img src="img/imagen3.jpg" alt="Plaza Central de San Lorenzo">
+        <div class="body">
+          <h3>Plaza Central</h3>
+          <p>Espacio verde para caminar y descansar. Suele ser sede de ferias, actos cívicos y eventos culturales de la comunidad.</p>
+          <p class="note">Visita de noche: iluminación agradable y puestos de comida cercanos.</p>
+          <div class="meta">
+            <a href="https://www.google.com/maps/search/?api=1&query=Plaza+Central+San+Lorenzo+Paraguay" target="_blank">📍 Ubicación</a>
+            <a href="#top">🔝 Inicio</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 4. Mercado Municipal de San Lorenzo -->
+      <article id="mercado" class="card">
+        <img src="img/imagen4.jpg" alt="Mercado Municipal de San Lorenzo">
+        <div class="body">
+          <h3>Mercado Municipal</h3>
+          <p>El corazón comercial tradicional: frutas, verduras, comidas típicas y productos locales a buen precio.</p>
+          <p class="note">Ir temprano para más variedad y menos calor.</p>
+          <div class="meta">
+            <a href="https://www.google.com/maps/search/?api=1&query=Mercado+Municipal+San+Lorenzo+Paraguay" target="_blank">📍 Ubicación</a>
+            <a href="#top">🔝 Inicio</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 5. Campus de la Universidad Nacional de Asunción (UNA) -->
+      <article id="una" class="card">
+        <img src="img/imagen5.jpg" alt="Campus de la Universidad Nacional de Asunción">
+        <div class="body">
+          <h3>Campus de la Universidad Nacional de Asunción (UNA)</h3>
+          <p>Amplio campus universitario con facultades, espacios verdes y vida estudiantil. Para paseos tranquilos y fotos en sus avenidas arboladas.</p>
+          <p class="note">Fin de semana hay menos tránsito interno.</p>
+          <div class="meta">
+            <a href="https://www.google.com/maps/search/?api=1&query=Campus+UNA+San+Lorenzo+Paraguay" target="_blank">📍 Ubicación</a>
+            <a href="#top">🔝 Inicio</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 6. Pinedo Shopping -->
+      <article id="pinedo" class="card">
+        <img src="img/imagen6.jpg" alt="Pinedo Shopping">
+        <div class="body">
+          <h3>Pinedo Shopping</h3>
+          <p>Centro comercial popular con tiendas, cine y opciones gastronómicas. Una parada práctica para cerrar el día.</p>
+          <p class="note">Buena opción si buscas souvenirs o merendar.</p>
+          <div class="meta">
+            <a href="https://www.google.com/maps/search/?api=1&query=Pinedo+Shopping+San+Lorenzo+Paraguay" target="_blank">📍 Ubicación</a>
+            <a href="#top">🔝 Inicio</a>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>  
+
+  <footer>
+    <div class="container">
+      <p><span class="badge">💡</span> Gracias Profe Amalia.</p>
+      <p class="note">3ro BTI.</p>
+    </div>
+  </footer>
+</body>
+</html>
